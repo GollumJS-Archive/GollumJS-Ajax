@@ -1,0 +1,5 @@
+[
+	"src/Ajax.js",
+	"src/Ajax/Proxy.js",
+	"src/config.js"
+]
