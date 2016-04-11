@@ -68,7 +68,6 @@ GollumJS.NS(GollumJS.Ajax, function() {
 						delete (_this.calling[id]);
 					})
 					.catch(function (error) {
-						console.error(error);
 						if (_this.calling[id]) {
 							for (var i = 0; i < calling[id].length; i++) {
 								if (_this.calling[id][i]) {
