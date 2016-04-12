@@ -53,10 +53,8 @@ GollumJS.NS(GollumJS.Ajax, function() {
 					})
 					.catch(function (error) {
 						if (_this.calling[id]) {
-							for (var i = 0; i < calling[id].length; i++) {
-								if (_this.calling[id][i]) {
-									_this.calling[id][i].reject(error);
-								}
+							for (var i = 0; i < _this.calling[id].length; i++) {
+								_this.calling[id][i].reject(error);
 							}
 						}
 					})
