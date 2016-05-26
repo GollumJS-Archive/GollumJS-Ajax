@@ -100,12 +100,20 @@ GollumJS.config = GollumJS.Utils.extend ({
 		excludesPath: ["%node.gollumjs_ajax_path%/src"],
 	},
 	
-	services: {
-		
-		ajaxProxy: {
-			class: 'GollumJS.Ajax.Proxy'
+	className: {
+		ajax: {
+			ajax: 'GollumJS.Ajax',
+			proxy: 'GollumJS.Ajax.Proxy'
 		}
-		
+	},
+	
+	services: {
+		ajax: {
+			class: '%className.ajax.ajax%'
+		},
+		ajaxProxy: {
+			class: '%className.ajax.proxy%'
+		}
 	}
 
 }, GollumJS.config);
